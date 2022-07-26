@@ -1,0 +1,34 @@
+{% extends "AppTrabajo/herencia.html" %}
+
+{% load static %}
+
+{% block herencia %}
+
+<div style="background-color: rgb(194, 114, 247);">
+
+    <h1>Editar Gerente</h1>
+    
+    {% if registro.errors %}
+
+    <p style="color: red;"> Datos erróneos</p>
+
+    {% endif %}
+
+
+    <form action="" method="POST">{% csrf_token %}
+        
+        <table>
+
+            {{ miFormulario.as_table }}
+
+
+        </table>
+
+
+        <input type="submit", value="Registrar">
+
+    </form>
+    <br>
+</div>
+
+{% endblock %}

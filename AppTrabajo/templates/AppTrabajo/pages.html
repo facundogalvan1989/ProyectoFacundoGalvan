@@ -1,0 +1,27 @@
+{% extends "AppTrabajo/herencia.html" %}
+
+{% load static %}
+
+{% block herencia %}
+
+<div style="background-color: whitesmoke;">
+    <h1>Pages</h1>
+        <button>
+         <a href="{% url 'RegistroGerente' %}"> - Registro Gerente -</a>
+         <a href="{% url 'RegistroVendedor' %}"> Registro Vendedor -</a>
+         <a href="{% url 'RegistroExpedicionista' %}"> Registro Expedicionista -</a>            
+        </button>    
+  
+        <button>
+         <a href="{% url 'VerGerente' %}"> - Modificar Gerente -</a>
+         <a href="{% url 'VerVendedor' %}"> Modificar Vendedor -</a>
+         <a href="{% url 'VerExpedicionista' %}"> Modificar Expedicionista -</a>            
+        </button>  
+        
+        <button>
+            <a href="{% url 'Register' %}"> - Altas Perfiles -</a>
+            <a href="{% url 'EditarPerfil' %}"> Editar Perfiles -</a>
+        </button>  
+</div>
+
+{% endblock %}

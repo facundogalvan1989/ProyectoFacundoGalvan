@@ -1,0 +1,41 @@
+{% extends "AppTrabajo/herencia.html" %}
+
+{% load static %}
+
+{% block herencia %}
+
+<div style="background-color: rgb(240, 188, 75);">
+    <!--Aquí va lo que cambia, y lo asociado a está vista :)
+    <h1>Registro Vendedor</h1>
+    <form action="/registroVendedor/" method="post">{% csrf_token %} 
+    <p>Gerente: <input type="text" name="gerente"></p>
+    <p>Legajo: <input type="number" name="legajo"></p>
+    <p>Ingreso: <input type="datetime" name="ingreso"></p>
+    <input type="submit" value="Registrar"> -->   
+    </form>
+    <h1>Registro Vendedor</h1>
+    
+    {% if registro.errors %}
+
+    <p style="color: red;"> Datos erróneos</p>
+
+    {% endif %}
+
+
+    <form action="" method="POST">{% csrf_token %}
+        
+        <table>
+
+            {{ registro.as_table }}
+
+
+        </table>
+
+
+        <input type="submit", value="Registrar">
+
+    </form>
+    <br>
+</div>
+
+{% endblock %}

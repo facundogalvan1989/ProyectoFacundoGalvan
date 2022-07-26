@@ -1,0 +1,30 @@
+{% extends "AppTrabajo/herencia.html" %}
+
+{% load static %}
+
+{% block herencia %}
+
+<div style="background-color: whitesmoke;">
+
+    <h1>Editar Perfil</h1>
+    <h1>De {{usuario}}</h1>
+    <br>
+</head>
+<body>
+    <form action="" method="POST"> {%csrf_token%}
+       
+        <table>
+
+            {{ miFormulario.as_table }}
+
+
+        </table>
+
+
+        <input type="submit", value="Registrar">
+
+    </form>
+    <br>
+</div>
+
+{% endblock %}

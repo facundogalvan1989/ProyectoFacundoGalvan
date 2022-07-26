@@ -1,0 +1,17 @@
+{% extends "AppTrabajo/herencia.html" %}
+
+{% load static %}
+
+{% block herencia %}
+
+<div style="background-color: rgb(114, 247, 165);">
+    <h1>Bienvenidos Expedicionistas</h1>
+    <br>
+    <ul>
+        {% for e in expedicionista %}
+        <li>{{e.nombre}}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}

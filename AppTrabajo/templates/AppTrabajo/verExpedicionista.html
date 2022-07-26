@@ -1,0 +1,21 @@
+{% extends "AppTrabajo/herencia.html" %}
+
+{% load static %}
+
+{% block herencia %}
+
+<div style="background-color: rgb(114, 247, 165);">
+    <h1>Expedicionistas</h1>
+    <br>
+    <ul>
+        {% for e in expedicionista %}
+        <li>{{e}}</li>
+        <button>
+            <a href="{% url 'EliminarExpedicionista' e.legajo %}"> Eliminar</a>
+            <a href="{% url 'EditarExpedicionista' e.legajo %}"> Editar</a>
+        </button>           
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "AppTrabajo/herencia.html" %}
+
+{% load static %}
+
+{% block herencia %}
+
+<div style="background-color: whitesmoke;">
+    <h1>Bienvenidos.</h1>
+    <br>
+</head>
+<body>
+    <div>
+        <h1>Sesion cerrada</h1>
+        <button><a href="{% url 'Login' %}">Vuelve a entrar</a></button>
+    </div>
+</body>
+</html>
+
+{% endblock %}

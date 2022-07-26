@@ -1,0 +1,29 @@
+{% extends "AppTrabajo/herencia.html" %}
+
+{% load static %}
+
+{% block herencia %}
+
+<div style="background-color: whitesmoke;">
+    <h1>Bienvenido/a {{mensaje}}</h1>
+    <br>
+    {% if request.user.is_authenticated %}
+    <button><a href="{% url 'Logout' %}">Cerrar sesión</a></button>
+    {% endif %}
+    <!-- <h3>Buscador Gerente por legajo:</h3>
+    <form action="/AppTrabajo/buscar" method="GET">
+        <input type="number" name="legajo">
+        <input type="submit" value="buscar"> -->
+    </form>
+</div>
+{% if gerente %}
+
+    <ul>
+	{% for g in gerente %}
+		<li> {{gerente.legajo}} </li>
+	{% endfor %}
+
+    </ul>
+
+    {% endif %}
+{% endblock %}
