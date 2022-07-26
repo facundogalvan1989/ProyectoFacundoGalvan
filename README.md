@@ -1,6 +1,6 @@
 # ProyectoFacundoGalvan
 
-Link a video explicativo y demostrativo del funcionamiento de la Aplicacion:
+Link a video explicativo y demostrativo del funcionamiento de la Aplicación:
 
 https://youtu.be/pm3dIHGvxSk
 
