@@ -22,7 +22,8 @@ forms.py:
 En este archivo se encuentra el formulario que hace envio de los datos ingresados al backend para el Registro de Empleados.
 Tenemos UserRegisterForm y UserEditFormpPara el manejo de datos dentro del sistema, tanto para los empleados como para los perfiles.
 
-views.py
+views.py:
+
 Acá encontraremos las vistas creadas y moldeadas para la navegacion de la web. Entre algunas tenemos:
 
 #Inicio: Es la pantalla de inicio de la aplicacion donde se pueden loguear y ver parte de lo que ofrece la web.
